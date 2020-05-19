@@ -16,15 +16,15 @@ import javax.servlet.http.HttpSession;
  *
  * @author willi
  */
-@Named(value = "UserNameBean")
+@Named(value = "UserNumberBean")
 @SessionScoped
-public class UserNameBean implements Serializable {
+public class UserNumberBean implements Serializable {
 
     Integer randomInt;
     Integer userNumber;
     String response;
     
-    public UserNameBean() {
+    public UserNumberBean() {
         Random randomGR = new Random();
         randomInt = randomGR.nextInt(10);
         System.out.println("Duke's number: " + randomInt);
